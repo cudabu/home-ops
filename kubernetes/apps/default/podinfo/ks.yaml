@@ -9,7 +9,7 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: podinfo
+    name: home-kubernetes
   wait: false # no flux ks dependents
   interval: 3m0s
   retryInterval: 1m0s
