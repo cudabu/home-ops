@@ -10,7 +10,7 @@ spec:
     spec:
       version: ">=1.0.0-alpha"
       sourceRef:
-        kind: HelmRepository
+        kind: GitRepository
         name: podinfo
         namespace: flux-system
   maxHistory: 2
