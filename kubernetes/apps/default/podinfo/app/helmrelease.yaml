@@ -8,6 +8,7 @@ spec:
   interval: 30m
   chart:
     spec:
+      chart: podinfo
       version: ">=1.0.0-alpha"
       sourceRef:
         kind: GitRepository
