@@ -5,4 +5,4 @@ namespace: default
 resources:
   - ./namespace.yaml
   - ./hajimari/ks.yaml
-  - ./podinfo/ks.yaml
+#  - ./podinfo/ks.yaml
