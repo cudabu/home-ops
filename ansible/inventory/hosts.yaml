@@ -1,0 +1,25 @@
+---
+kubernetes:
+  children:
+    master:
+      hosts:
+        k8s-01:
+          ansible_user: cudabu
+          ansible_host: 192.168.6.51
+        k8s-02:
+          ansible_user: cudabu
+          ansible_host: 192.168.6.52
+        k8s-03:
+          ansible_user: cudabu
+          ansible_host: 192.168.6.53
+    worker:
+      hosts:
+        k8s-w01:
+          ansible_user: cudabu
+          ansible_host: 192.168.6.54
+        k8s-w02:
+          ansible_user: cudabu
+          ansible_host: 192.168.6.55
+        k8s-w03:
+          ansible_user: cudabu
+          ansible_host: 192.168.6.56
