@@ -2,16 +2,15 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: podinfo
+  name: cluster-apps-podinfo
   namespace: flux-system
 spec:
-  interval: 30m0s
-  path: ./kustomize
+  path: ./kubernetes/apps/default/podinfo/app
   prune: true
-  retryInterval: 2m0s
   sourceRef:
     kind: GitRepository
     name: podinfo
-  targetNamespace: default
-  timeout: 3m0s
-  wait: true
+  wait: false # no flux ks dependents
+  interval: 3m0s
+  retryInterval: 1m0s
+  timeout: 5m
