@@ -3,7 +3,7 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: longhorn-system
+  name: storage
 ---
 # Source: longhorn/templates/serviceaccount.yaml
 apiVersion: v1
