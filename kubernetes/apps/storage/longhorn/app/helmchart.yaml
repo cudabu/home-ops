@@ -29,12 +29,8 @@ spec:
     ingress:
       enabled: true
       ingressClassName: nginx
-      hosts:
-        - host:
-          - &host "longhorn.${SECRET_DOMAIN}"
-      tls:
-        - hosts:
-          - *host
+      host: "longhorn.${SECRET_DOMAIN}"
+      tls: true
       annotations:
         hajimari.io/icon: iconoir:database-backup
         hajimari.io/enable: "true"
