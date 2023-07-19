@@ -27,13 +27,17 @@ spec:
       retries: 5
 
   values:
+    persistence:
+      defaultClassReplicaCount: 2
+    defaultSettings:
+      defaultReplicaCount: 2
     enablePSP: false
     ingress:
       enabled: true
-      ingressClassName: nginx
-      host: "longhorn.${SECRET_DOMAIN}"
+      ingressClassName: "nginx"
+      host: "longhorn.cudabu.io"
       tls: true
       annotations:
-        hajimari.io/icon: iconoir:database-backup
+        hajimari.io/icon: "iconoir:database-backup"
         hajimari.io/enable: "true"
         hajimari.io/appName: Longhorn
