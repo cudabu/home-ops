@@ -30,7 +30,8 @@ spec:
       enabled: true
       ingressClassName: nginx
       hosts:
-        - host: &host "longhorn.${SECRET_DOMAIN}"
+        - host:
+          - &host "longhorn.${SECRET_DOMAIN}"
       tls:
         - hosts:
           - *host
