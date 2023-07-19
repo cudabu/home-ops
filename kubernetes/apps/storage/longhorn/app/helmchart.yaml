@@ -15,15 +15,17 @@ spec:
         name: longhorn
         namespace: flux-system
       interval: 5m
-  maxHistory: 2
+
   install:
-    createNamespace: true
+    createNamespace: false
     remediation:
-      retries: 3
+      retries: 5
+
   upgrade:
-    cleanupOnFail: true
+    crds: CreateReplace
     remediation:
-      retries: 3
+      retries: 5
+
   values:
     enablePSP: false
     ingress:
