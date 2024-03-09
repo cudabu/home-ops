@@ -1,0 +1,25 @@
+---
+kubernetes:
+  children:
+    controllers:
+      hosts:
+        "k1":
+          ansible_user: "cudabu"
+          ansible_host: "192.168.4.11"
+        "k2":
+          ansible_user: "cudabu"
+          ansible_host: "192.168.4.12"
+        "k3":
+          ansible_user: "cudabu"
+          ansible_host: "192.168.4.13"
+    workers:
+      hosts:
+        "k4":
+          ansible_user: "cudabu"
+          ansible_host: "192.168.4.14"
+        "k5":
+          ansible_user: "cudabu"
+          ansible_host: "192.168.4.15"
+        "k6":
+          ansible_user: "cudabu"
+          ansible_host: "192.168.4.16"
