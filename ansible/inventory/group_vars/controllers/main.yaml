@@ -25,4 +25,5 @@ k3s_server:
   secrets-encryption: true
   tls-san:
     - "192.168.4.17"
+    - "kube.lab.cudabu.io"
   write-kubeconfig-mode: "644"
